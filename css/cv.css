@@ -1,0 +1,129 @@
+@page { 
+    size:               A4;
+    margin-top:         10mm;
+    margin-bottom:      10mm;
+    margin-left:        15mm;
+    margin-right:       15mm;
+}
+
+body {
+    margin-top:         0;
+}
+*{
+    /*font-family:        "Verdana";*/
+    font-family:        "Times New Roman";
+    font-size:          10pt;
+}
+
+h1 {
+    clear:          both;
+    padding:        5px 0px;
+    text-align:     center;
+    border:         2px solid #999;
+    font-size:      12pt;
+    margin-top:     10px;
+    margin-bottom:  10px;
+    margin-left:    20%;
+    margin-right:   20%;
+    border-radius:  6px;
+}
+
+h2 {
+    border-bottom:      1px solid #999;
+    font-size:          11pt;
+    margin: 5px 0
+}
+
+table {
+    /*border-collapse:    collapse;*/ /* border radius do not work with border collapse */
+    cellspacing: 0;
+    page-break-inside:  avoid;
+}
+/* Prince do not support border-radius : 6px 6px 0 0; syntax */
+table tr:first-child td:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+table tr:last-child td:first-child {    
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.left {
+    padding:            5px 0px 5px 5px;
+    vertical-align:     top;
+    background-color:   silver;
+    font-weight:        bold;
+    width:              110px;
+}
+td.left {
+    border-bottom:      1px solid #FFF;
+}
+.right {
+    padding-left:       5px;
+}
+.right p{
+    margin:             0;
+    padding:            0;
+}
+td.right {
+    padding-top:        5px;
+}
+.right ul {
+    margin-top:         0px;
+    margin-bottom:      0px;
+    margin-left:        0px;
+    padding-left:       20px;
+
+}
+.right ul li {
+    list-style-type:    disc; 
+}
+.right ul ul {
+    padding-left:   20px;   
+}
+.right ul ul li {
+    list-style-type:    circle;
+}
+.right ul ul ul {
+     padding-left:   20px;   
+}
+.right ul ul ul li {
+    list-style-type:    disc;
+}
+
+
+a {
+    color:              black;
+    text-decoration:    none;
+}
+.pagebreak {
+    page-break-after:   always;
+}
+
+/* DOCUMENT HEADER */
+.card {
+    float:              left;
+    font-size:          10pt;
+    padding-top: 		10px;
+}
+.card p {
+    margin:             0;
+    padding:            0;
+}
+.card strong {
+    font-size:          11pt;
+}
+
+.photoID {
+    float:              right;
+    margin-top:         -10px;
+}
+
+.photoID img {
+    border-radius:6px; 
+    overflow: hidden;
+    /* box shadow not yet supported by prince */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+

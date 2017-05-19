@@ -1,0 +1,239 @@
+@page { 
+    size:           A4;
+    /*margin-top:   10mm;
+    margin-bottom:  10mm;
+    margin-left:    10mm;
+    margin-right:   10mm*/
+    margin:         0;
+    padding:        0;
+}
+
+body {
+    margin:     0;
+    padding:    0;
+}
+
+*{
+    /*font-family:  "Verdana";*/
+    font-family:    "Times New Roman";
+    font-size:      10pt;
+    margin:         0;
+    padding:        0;
+}
+
+
+/* column*/
+
+#docleft {
+    /*float:    left;*/
+    width:      70%;
+}
+
+
+#docright {
+    background: #F8F8F8;
+    float:      right;
+    width:      30%;
+    height:     297mm;
+}
+
+#docright p {
+    margin:     0;
+    padding:    0;
+}
+
+/* HEADER */
+
+#presentation {
+    min-height:     40mm;
+    max-height:     40mm;
+    border-bottom:  2px solid white;
+    padding:        0 5mm;
+    position:       relative;
+}
+
+#presentation img {
+    position:                   absolute;
+    left:                       10mm;
+    border-bottom-left-radius:  6px;
+    border-bottom-right-radius: 6px;
+    overflow:                   hidden;
+}
+
+#summary {
+    position:   absolute;
+    left:       40mm;
+}
+#summary h2 { 
+    padding-top:    5mm;
+    margin:         0;
+    font-size:      14pt;
+    border:         none;
+}
+
+#summary p { 
+    font-size:      10pt;
+    padding-top:    2mm;
+    width:          100mm;
+    text-align:     justify;
+}
+
+#contact {
+    min-height:     35mm;
+    max-height:     35mm;
+    border-bottom:  2px solid white;
+    padding:        5mm 5mm 0 5mm;
+}
+
+#contact p {
+    margin:     0;
+    padding:    0;
+}
+
+#interests {
+    border-top: 2px solid white;
+    padding:    0 5mm 5mm 5mm;
+}
+
+#interests ul {
+    padding-left:   5mm;
+}
+
+/* BODY */
+
+#xp {
+    padding-left:   5mm;
+    padding-right:  5mm;
+}
+
+#comp {
+    padding:    0 5mm 5mm 5mm;
+}
+
+#comp ul {
+    padding-left:   5mm;
+}
+
+#comp h3 {
+    background: #E8E8E8;
+    margin:     1mm 0;
+    padding:    1mm 0;
+    text-align: center;
+}
+
+h1 {
+    clear:          both;
+    padding:        5px 0px;
+    text-align:     center;
+    border:         2px solid #999;
+    font-size:      12pt;
+    margin-top:     10px;
+    margin-bottom:  10px;
+    margin-left:    20%;
+    margin-right:   20%;
+    border-radius:  6px;
+}
+
+h2 {
+    border-bottom:  1px solid #999;
+    font-size:      11pt;
+    margin:         5px 0
+}
+
+h3 {
+    margin:     0;
+    padding:    2mm 0;
+}
+
+.right blockquote {
+    margin:         2px;
+    margin-left:    10px;
+    font-style:     italic;
+}
+
+table {
+    /*border-collapse:      collapse;*/ /* border radius do not work with border collapse */
+    cellspacing:            0;
+    /*page-break-inside:    avoid;*/
+}
+/* Prince do not support border-radius:     6px 6px 0 0; syntax */
+table tr:first-child td:first-child {
+    border-top-left-radius:     6px;
+    border-top-right-radius:    6px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius:  6px;
+    border-bottom-right-radius: 6px;
+}
+
+.left {
+    /*padding:          5px 2px 0px 2px;*/
+    padding-top:        5px;
+    vertical-align:     top;
+    text-align:         center;
+    background-color:   #F8F8F8;
+    font-weight:        bold;
+    width:              50px;
+}
+td.left {
+    border-bottom:  1px solid #FFF;
+}
+.right {
+    padding-left:   5px;
+}
+.right p{
+    margin:     0;
+    padding:    0;
+}
+td.right {
+    padding-top:    5px;
+}
+.right ul {
+    margin-top:     0px;
+    margin-bottom:  0px;
+    margin-left:    0px;
+    padding-left:   20px;
+
+}
+.right ul li {
+    list-style-type:    disc;
+}
+.right ul ul {
+    padding-left:   10px;
+}
+.right ul ul li {
+    list-style-type:    circle;
+}
+.right ul ul ul {
+    padding-left:   10px;
+}
+.right ul ul ul li {
+    list-style-type:    disc;
+}
+
+.right h4 {
+    font-size:  11pt;
+    margin:     0;
+}
+
+.right h4 em {
+    font-size:      10pt;
+    font-style:     normal;
+    font-weight:    normal;
+    margin:         0;
+    padding-left:   5px;
+}
+
+.right strong {
+    margin: 2px;
+}
+
+a {
+    color:              black;
+    text-decoration:    none;
+}
+.pagebreak {
+    page-break-after:   always;
+}
+
+

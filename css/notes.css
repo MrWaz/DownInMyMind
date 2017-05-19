@@ -1,0 +1,247 @@
+/*
+ *Same as Document.css whithout the counter-reset
+ */
+
+body {
+  max-width:  900px;
+  margin:     0 auto;
+  color:      #4a4a4a;
+}
+
+img {
+  max-width:  100%;
+}
+
+
+*{
+   /*font-family: "Times New Roman", Times, serif;*/
+   font-family: Georgia, Palatino, serif;
+}
+
+p{
+  /*text-align: justify;*/
+  text-align:left;
+}
+
+
+h1{
+    font-size:     2.0em;
+    color:         #800000;
+    text-align:    center;
+    margin-top:    50px;
+    margin-bottom: 30px;
+    width: 60%;
+    margin-left: 20%;
+    margin-left: 20%;
+}
+
+h2 {
+  color: white;
+  margin-top: 20px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px; 
+  background-color:  #365F91;
+  
+/*  background: -webkit-linear-gradient(left, #365F91, #000);
+  background: -moz-linear-gradient(left, #365F91, #000);
+  background: -o-linear-gradient(left, #365F91, #000);
+  background: -ms-linear-gradient(left, #365F91, #000);
+  background: linear-gradient(left, #365F91, #000);*/
+
+}
+
+h3{
+  margin-top:       10px;
+  padding-left:     10px;
+  font-size:      1.1em;
+  margin-bottom:  5px;
+  border-bottom:  2px solid #365F91!important;
+}
+
+h4 {
+  color:         #000033;
+}
+
+h5 {
+  padding-left:    10px;
+  font-size:       1em;
+}
+h6 {
+  padding-left:    20px;
+  font-size:       0.9em;
+}
+
+#content{
+  background-color: white;
+  padding:          10px 50px ;
+}
+
+table {
+  margin: 1em;
+}
+
+td,th {
+  border: 1px solid;
+}
+
+tbody{
+  border-bottom: solid 1px;
+}
+
+th{
+  font-weight: normal;
+  color: white;
+  padding: 5px 5px 5px;
+
+  background-color:  #365F91;
+}
+
+td{
+  padding: 5px 5px 5px;
+}
+
+a.footnote{
+  font-size:70%; 
+  vertical-align:top;
+}  
+
+/*Usual Links*/
+a:link,a:visited{
+  color:black;
+  text-decoration: underline;
+}
+a:hover,a:active{
+  color:white;
+  background-color:#A0A0A0;
+}
+
+
+/*LINK BOX*/
+a.box:link,a.box:visited{
+  display:          inline;
+  color:            white;
+  background-color: #0066CC;
+  width:            120px;
+  text-align:       center;
+  padding:          4px;
+  text-decoration:  none;
+}
+
+a.box:hover,a.box:active{
+  background-color:#003399;
+}
+
+
+pre{
+  display:           block;
+  margin-left:       20px;
+  padding:           10px;
+  background-color:  #F7F7F7;
+  border:            1px dashed;
+  word-wrap:         break-word;
+  page-break-inside: avoid;
+}
+
+code{
+  /*font-family:       "FreeMono", Courier, monospace;*/
+  font-family:        Consolas, Monaco, Andale Mono, monospace;
+  font-size:          80%;
+  word-wrap:          break-word;
+}
+
+dl
+{
+  margin: 2em 0;
+  padding: 0;
+}
+
+dt
+{
+  position: relative;
+  left: 0;
+  top: 1.1em;
+  width: 10em;
+  text-align: right;
+  font-weight: bold;
+  color: #365F91;
+}
+
+dd
+{
+  border-left:    1px solid #000;
+  border-bottom:  1px solid #000;
+  margin:         0 0 0 11em;
+  padding:        0 0 .5em .5em;
+}
+
+blockquote {
+  display:      block;
+  margin-left:  5%;
+  margin-right: 5%;
+  padding:      0 30px;
+  font-style:   italic;
+}
+blockquote:before, blockquote:after {
+  color:       #ddd;
+  display:     block;
+  font-size:   200%;
+  width:       50px;
+  margin-left: -0.55em;
+}
+blockquote:before {
+  content:  '\201C';
+  height:   0;
+}
+blockquote:after {
+  content:    '\201D';
+  height:     20px;
+  margin-top: -20px;
+}
+
+/* 
+  A few classes for special stuff to use with 
+  <div class="TheClass" markdown=1>MY TEXT</div>
+*/
+
+.note {
+  display: block;
+  margin-left:  10%;
+  margin-right: 30%;
+  min-height: 30px;
+  padding:      0 0 0 40px;
+  border-right:  3px solid #ddd;
+  border-left:  3px solid #ddd;
+  background-image: url("../images/osa_awareness.png");
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+}
+/*div.note:before {
+  display: block;
+  float: left;
+  content: url(../files/osa_awareness.svg);
+  margin: 0 0 0 -50px;
+}*/
+
+
+.warning {
+  display: block;
+  margin-left:  10%;
+  margin-right: 30%;
+  min-height: 30px;
+  padding:      0 0 0 40px;
+  border-left:  3px solid #C90008;
+  border-right:  3px solid #C90008;
+  background-image: url(../images/osa_warning.png);
+  background-repeat: no-repeat;
+  /*background-attachment:fixed;*/
+  background-position: 5px 0px;
+}
+/*
+div.warning:before {
+  display: block;
+  float: left;
+  content: url(../files/osa_warning.svg);
+  margin: 0 0 0 -50px;
+}*/
+
